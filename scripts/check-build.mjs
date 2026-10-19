@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {readFileSync,readdirSync,existsSync} from 'node:fs';
+const files=readdirSync('dist/assets');
+assert.ok(!existsSync('dist/preview-square.html'),'development preview frame must not ship');
+assert.ok(!files.some(f=>f.startsWith('design-')),'design-only images must not ship');
+const js=files.filter(f=>f.endsWith('.js')).map(f=>readFileSync('dist/assets/'+f,'utf8')).join('\n');
+for(const sample of ['水产商户示意','design-preview','design-seafood'])assert.ok(!js.includes(sample),'preview fixtures must not ship: '+sample);
+const worker=readFileSync('dist/sw.js','utf8');
+assert.ok(!worker.includes('/* BUILD_ASSETS */'),'offline asset list must be injected');
+for(const file of files)assert.ok(worker.includes('assets/'+file),'asset must be precached: '+file);
+assert.ok(readFileSync('dist/config.js','utf8').includes('ENTRANCE_CONFIG'));
+console.log('Production isolation and complete offline precache passed.');
