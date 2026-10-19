@@ -733,3 +733,137 @@ button:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:3px so
  .wayfinding .action-sub{font-size:2vw}
  .wayfinding .action-sub .bi .en{font-size:.85em}
 }
+
+/* ===== v15 · 市场平面图 + 板块悬浮窗 (2026-10-19) ===== */
+/* 平面图底图 */
+.map-board{background:rgba(255,255,255,.6)}
+.plan-img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;z-index:0;pointer-events:none}
+/* 分区热区：默认透明覆盖在图上，悬停/选中显现 */
+.zone{background:transparent;border:2px solid transparent;box-shadow:none;color:transparent}
+.zone span{display:block;color:transparent}
+.zone:hover:not(.selected),.zone:focus-visible{background:rgba(255,255,255,.42);border-color:#1D6FC4}
+.zone:hover:not(.selected) span,.zone:focus-visible span{color:#10315F}
+.zone.selected{background:rgba(255,255,255,.5);border-color:#1D6FC4;color:#10315F;outline:3px solid #1D6FC4;outline-offset:-4px}
+.zone.selected span{color:#10315F}
+/* 悬浮窗 */
+.map-popup-host{position:absolute;inset:0;z-index:6;pointer-events:none}
+.map-popup-host.open{pointer-events:auto}
+.map-popup-backdrop{position:absolute;inset:0;background:rgba(4,22,44,.38);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);pointer-events:auto}
+.map-popup{
+ position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+ width:min(680px,92%);max-height:84%;overflow:auto;z-index:7;
+ display:flex;flex-direction:column;gap:1.4vh;padding:2vh 1.8vw;
+ background:rgba(255,255,255,.94);border:1px solid #fff;border-radius:1.5rem;
+ box-shadow:0 34px 90px -24px rgba(16,49,95,.55);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+ pointer-events:auto}
+.map-popup-head{display:flex;align-items:center;justify-content:space-between;gap:1.5vw}
+.map-popup-head h3{margin:0;font-size:clamp(22px,2.3vw,40px);color:#123C7A}
+.map-popup-close{min-height:0;padding:.9vh 1.6vw;font-size:clamp(14px,1.4vw,24px);flex-shrink:0}
+.map-popup-desc{margin:0;font-size:clamp(14px,1.5vw,26px);color:var(--ob-muted);line-height:1.6}
+.map-popup-stall{
+ display:flex;align-items:center;gap:1.2vw;text-align:left;width:100%;
+ background:rgba(244,248,253,.9);border:1px solid rgba(16,49,95,.12);border-radius:1rem;
+ padding:1.2vh 1.2vw;min-height:0;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.map-popup-stall:hover{transform:translateX(.4vw);border-color:rgba(46,123,208,.5);box-shadow:0 10px 26px -12px rgba(31,71,125,.4)}
+.map-popup-stall .shop-photo,.map-popup-stall .photo-empty{width:9vw;height:6.5vw;border-radius:.8rem;flex-shrink:0;object-fit:cover}
+.map-popup-stall-info{flex:1;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:.5vh}
+.map-popup-stall-info h4{margin:0;font-size:clamp(17px,1.8vw,32px);color:#123C7A;overflow-wrap:anywhere}
+.map-popup-stall-info p{margin:0;font-size:clamp(12px,1.3vw,22px);color:var(--ob-muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+.map-popup-stall .icon{flex-shrink:0;filter:invert(19%) sepia(50%) saturate(1500%) hue-rotate(200deg) brightness(92%);opacity:.7}
+.map-popup-empty{margin:0;font-size:clamp(14px,1.5vw,26px);color:var(--ob-muted);text-align:center;padding:2vh 0}
+
+/* ===== v16 平面图充满导览框 · 无滚动等比缩放（img 原生适配 + 分区层同步 img 矩形） ===== */
+.market-app .map-canvas{overflow:hidden;display:flex;align-items:center;justify-content:center}
+.market-app .map-canvas .plan-img{position:static;inset:auto;display:block;flex:0 0 auto;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.market-app .map-canvas .map-board{position:absolute;left:0;top:0;margin:0;min-width:0;width:0;height:0;aspect-ratio:auto;background:none}
+
+/* ===== v17 模块化平面图：每个档口为独立切图按钮，所见即所点 ===== */
+.market-app .map-canvas{overflow:hidden;display:flex;align-items:center;justify-content:center}
+.market-app .map-canvas .map-board{position:relative;left:auto;top:auto;transform:none;margin:0;min-width:0;width:auto;height:auto;aspect-ratio:auto;background:none;flex:0 0 auto}
+.market-app .map-canvas .plan-img{position:static;inset:auto;display:block;width:100%;height:auto;max-width:100%;object-fit:fill;z-index:0;pointer-events:none}
+.market-app .map-canvas .module{position:absolute;left:var(--x);top:var(--y);width:var(--w);height:var(--h);padding:0;border:none;background:none;cursor:pointer;z-index:2;transition:filter .2s ease}
+.market-app .map-canvas .module .module-img{width:100%;height:100%;display:block;object-fit:fill}
+.market-app .map-canvas .module:hover .module-img,.market-app .map-canvas .module:focus-visible .module-img{filter:brightness(1.15) saturate(1.2)}
+.market-app .map-canvas .module.selected{outline:4px solid #1D6FC4;outline-offset:-3px;z-index:3}
+
+/* ===== v18 悬停/按下配色反馈 (2026-10-20) ===== */
+/* 首页两个大按键（海鲜图鉴/市场地图）：悬停变深橙 */
+.market-app .wayfinding{transition:background .25s ease,border-color .25s ease,transform .25s ease,box-shadow .25s ease}
+.market-app .wayfinding:hover,.market-app .wayfinding:focus-visible{background:#F59B2E;border-color:#E8861A;box-shadow:0 8px 24px -8px rgba(232,134,26,.45)}
+.market-app .wayfinding:hover .action-title,.market-app .wayfinding:focus-visible .action-title{color:#4A2400}
+.market-app .wayfinding:hover .action-sub,.market-app .wayfinding:focus-visible .action-sub{color:#7A4500;opacity:1}
+/* 底部导航栏按键：悬停变浅一档的橙 */
+.market-app .category-item{transition:background .2s ease}
+.market-app .category-item:hover,.market-app .category-item:focus-visible{background:#FBD3A0}
+/* 返回/主页按键：悬停浅蓝、按下再深一档的蓝 */
+.market-app .nav-button{transition:background .2s ease,border-color .2s ease}
+.market-app .nav-button:hover:not(:disabled){background:#D8E9FB;border-color:#1D6FC4}
+.market-app .nav-button:active:not(:disabled){background:#B7D3F2;border-color:#155CA8}
+
+/* ===== v19 大按键统一：平时同为玻璃底色，悬停统一变橙色玻璃 (2026-10-20) ===== */
+/* 平时：海鲜图鉴(primary)与看地图一致，恢复玻璃底色+蓝字蓝图标 */
+.market-app .wayfinding.primary{
+ background:linear-gradient(150deg,rgba(255,255,255,.8),rgba(255,255,255,.55));
+ border-color:rgba(255,255,255,.95);color:var(--ob-ink);
+ box-shadow:0 14px 36px -16px rgba(31,71,125,.35),inset 0 1px 0 #fff}
+.market-app .wayfinding.primary .action-sub{color:var(--ob-muted)}
+.market-app .wayfinding.primary .icon:not(.art-icon),.market-app .wayfinding.primary .arrow{filter:invert(17%) sepia(45%) saturate(1400%) hue-rotate(200deg) brightness(92%);opacity:.9}
+/* 悬停/聚焦：两个键统一变橙色玻璃（沿用海鲜图鉴原橙色渐变），文字/图标转白 */
+.market-app .wayfinding:hover,.market-app .wayfinding:focus-visible{
+ background:linear-gradient(135deg,#FF9A4D 0%,#FF6F1F 100%);
+ border-color:rgba(255,255,255,.5);color:#fff;
+ box-shadow:0 16px 42px -14px rgba(255,122,46,.5),inset 0 1px 0 rgba(255,255,255,.35)}
+.market-app .wayfinding:hover .action-title,.market-app .wayfinding:focus-visible .action-title{color:#fff}
+.market-app .wayfinding:hover .action-sub,.market-app .wayfinding:focus-visible .action-sub{color:rgba(255,244,230,.9);opacity:1}
+.market-app .wayfinding:hover .icon:not(.art-icon),.market-app .wayfinding:focus-visible .icon:not(.art-icon),.market-app .wayfinding:hover .arrow,.market-app .wayfinding:focus-visible .arrow{filter:brightness(0) invert(1);opacity:1}
+/* 撤销底部导航栏悬停变色（v18），选中态悬停保持原样 */
+.market-app .category-item:hover:not(.selected){background:transparent}
+.market-app .category-item.selected:hover{background:rgba(62,198,255,.14)}
+
+/* ===== v20 按手写标注调整 (2026-10-20) ===== */
+/* 日期/天气放大 */
+.market-app .head-info{font-size:clamp(20px,2.2vw,42px)}
+.market-app .head-info time,.market-app #weatherText{font-size:clamp(20px,2.2vw,42px)}
+@media (min-width:601px) and (min-aspect-ratio:17/20) and (max-aspect-ratio:5/4){
+ .market-app .head-info time,.market-app #weatherText{font-size:2.5vw}
+}
+/* 首页内容框上移（竖屏布局压缩头部与框体上边距） */
+@media (max-aspect-ratio:1/1){
+ .market-app .masthead{height:15.5vw;min-height:104px}
+ .market-app .main-surface{padding:12px 16px 14px}
+ .market-app .home-layout{gap:14px}
+}
+/* 列表页搜索框：移到底部返回/主页之间 */
+.market-app .page-actions .search{order:0;flex:1 1 auto;max-width:46%;min-width:200px;width:auto;margin-top:0}
+.market-app .page-actions .nav-button{flex:0 0 auto}
+
+/* ===== v21 首页动态鱼群 + 布局微调 (2026-10-20) ===== */
+/* 鱼群装饰层：贴底部、在按键下一层、不拦截点击；mask 自底向上渐隐融入玻璃底色 */
+.fish-layer{position:absolute;left:0;right:0;bottom:0;height:46%;pointer-events:none;z-index:0;overflow:hidden;opacity:.85;
+ -webkit-mask-image:linear-gradient(to top,#000 0%,rgba(0,0,0,.6) 40%,rgba(0,0,0,.22) 68%,transparent 94%);
+ mask-image:linear-gradient(to top,#000 0%,rgba(0,0,0,.6) 40%,rgba(0,0,0,.22) 68%,transparent 94%)}
+.fish-layer canvas{width:100%;height:100%;display:block}
+.market-app .home-layout{position:relative;z-index:1}
+/* 首页商户照片缩短（竖屏） */
+@media (max-aspect-ratio:1/1){.market-app .spotlight-container{height:40vh;min-height:280px}}
+/* 所有页面底部卡片框上移一点 */
+.market-app .main-surface{margin-bottom:1.8vh}
+
+/* ===== v22 顶部静态鱼群波带（终版） (2026-10-20) ===== */
+/* 页头背景：淡蓝鱼群波浪，市场名称/日期天气在其上层；撤销首页底部动态鱼群 */
+.fish-layer{display:none}
+.fish-wave{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:.55}
+.market-app .masthead .head-info{position:relative;z-index:2}
+
+/* ===== v23 海鲜图鉴卡片框：发光鱼群淡蓝背景 (2026-10-20) ===== */
+.knowledge-stage{position:relative;flex:1;min-height:0;border-radius:24px;overflow:hidden;display:flex;border:2px solid rgba(255,255,255,.9);box-shadow:0 14px 36px -18px rgba(31,71,125,.35)}
+.market-app .knowledge-list{position:relative;z-index:1;background:transparent;padding:2vh 1.4vw}
+.market-app .knowledge-item{background:rgba(255,255,255,.8);backdrop-filter:blur(8px) saturate(150%);-webkit-backdrop-filter:blur(8px) saturate(150%);border:1px solid rgba(255,255,255,.85);box-shadow:0 10px 26px -14px rgba(31,71,125,.35)}
+.market-app .empty-state{background:rgba(255,255,255,.8);backdrop-filter:blur(8px);position:relative;z-index:1}
+
+/* ===== v24 图鉴鱼群铺满整个内容大框 (2026-10-20) ===== */
+.market-app .main-surface.gf-on{position:relative;background:linear-gradient(180deg,#E2F1FB 0%,#CBE4F6 100%);border-color:rgba(255,255,255,.92)}
+.market-app .main-surface.gf-on > .gf-stage{z-index:0;border-radius:22px}
+.market-app .main-surface.gf-on > .section-view{position:relative;z-index:1}
+.market-app .main-surface.gf-on .knowledge-stage{border:none;box-shadow:none;border-radius:0;overflow:visible}
+.market-app .main-surface.gf-on .knowledge-list{padding:1vh 1vw 0}
