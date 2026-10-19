@@ -13,7 +13,7 @@
 .empty-state{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:12px;color:var(--muted);padding:35px;min-height:160px;height:100%;grid-column:1/-1;background:#e9f5ed;border-radius:26px}.empty-state .icon{width:76px;height:76px;opacity:.5}.empty-state h2,.empty-state h3{margin:0;color:var(--ink);font-size:clamp(24px,2vw,38px)}.empty-state p{margin:0;font-size:clamp(17px,1.2vw,23px);line-height:1.65;max-width:28em}.section-view{height:100%;display:flex;flex-direction:column;min-height:0}.section-heading{display:flex;align-items:center;gap:1.2vw;flex-shrink:0;margin-bottom:1.7vh}.section-heading h2{margin:0;font-size:clamp(27px,2.6vw,50px);flex:1;min-width:0}.back-button,.quiet-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#e1f1e6;border-radius:16px;padding:12px 18px;min-height:48px;font-size:clamp(16px,1.2vw,23px)}.quiet-button.active{background:#0b6b52;color:white}.search{display:flex;align-items:center;gap:10px;background:white;border:1px solid var(--line);border-radius:18px;padding:10px 16px;width:35%;font-size:clamp(17px,1.3vw,25px)}.search input{width:100%;border:0;background:none;min-width:0;outline:none;color:var(--ink)}.search:focus-within{outline:3px solid #08745b}.shop-grid{overflow:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.4vw;align-content:start;flex:1;padding:4px}.shop-card{display:flex;gap:16px;padding:14px;border:1px solid #d7e7df;border-radius:22px;background:#fff;text-align:left;align-items:center;min-height:160px}.shop-card .shop-photo,.shop-card .photo-empty{width:36%;height:155px;object-fit:cover;flex-shrink:0;border-radius:14px}.shop-card h3{font-size:clamp(21px,1.5vw,29px);margin:0 0 8px;line-height:1.4;overflow-wrap:anywhere}.shop-card p{font-size:clamp(15px,1vw,19px);margin:6px 0;color:var(--muted);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.stall-code{font-size:clamp(14px,1vw,19px);color:#28705a;background:#e5f3e9;padding:4px 9px;border-radius:7px;display:inline-block}.photo-empty{background:#e0eee5;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;color:var(--muted);font-size:16px}.photo-empty>.icon{width:52px;height:52px;opacity:.45}.shop-feature>.photo-empty{height:100%;padding-bottom:100px}.detail-content{overflow:auto;display:grid;grid-template-columns:1.15fr 1fr;gap:2.3vw;flex:1;min-height:0;padding:4px}.detail-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;min-height:230px}.detail-photos .photo-empty{min-height:230px;border-radius:22px}.detail-photos .shop-photo{width:100%;height:100%;max-height:48vh;object-fit:contain;background:#e6f1e9;border-radius:22px}.detail-text{padding:0 1vw;font-size:clamp(19px,1.4vw,27px);line-height:1.8;overflow-wrap:anywhere}.detail-text h3{font-size:clamp(23px,1.7vw,33px);margin:0 0 12px}.detail-text p{margin:0 0 20px;white-space:pre-wrap}.en{font-family:var(--en-font);font-size:.75em;color:var(--muted);letter-spacing:.03em}.bi{display:inline-flex;flex-direction:column;align-items:flex-start;text-align:left;line-height:1.2;min-width:0}.bi>*{display:block}.bi .en{font-size:.52em;opacity:.8;margin-top:.28em}.bi.center{align-items:center;text-align:center}.bi.inline{flex-direction:row;align-items:baseline;gap:.5em}.bi.inline .en{margin-top:0}.goods{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 25px}.goods span{padding:4px 12px;background:#e0eee3;border-radius:12px}
 .map-layout{display:grid;grid-template-columns:minmax(0,2.4fr) minmax(250px,1fr);gap:22px;flex:1;min-height:0}.map-area{display:flex;flex-direction:column;min-height:0;gap:14px}.floor-tabs{display:flex;gap:10px;flex-wrap:wrap}.map-canvas{position:relative;flex:1;min-height:200px;background:#e7f1e9;border-radius:18px;overflow:auto}.map-board{position:relative;margin:auto;aspect-ratio:var(--ratio);width:100%;min-width:450px}.zone{position:absolute;left:var(--x);top:var(--y);width:var(--w);height:var(--h);background:var(--zone-color,#b6dbce);border:3px solid white;border-radius:12px;font-size:clamp(13px,1.2vw,23px);padding:5px;overflow:hidden;overflow-wrap:anywhere}.zone.selected{outline:4px solid #07543e;outline-offset:-5px}.zone-info{background:#e3f2e8;border-radius:22px;padding:22px;overflow:auto;font-size:clamp(18px,1.3vw,25px);line-height:1.7}.zone-info h3{margin:0 0 14px;font-size:clamp(25px,1.8vw,35px)}.zone-info p{white-space:pre-wrap;overflow-wrap:anywhere}.map-caption{color:var(--muted);margin:0;font-size:16px}.knowledge-list{overflow:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;flex:1}.knowledge-item{background:#fff;border-radius:20px;padding:24px;line-height:1.7;font-size:clamp(18px,1.2vw,23px)}.knowledge-item h3{margin-top:0}.knowledge-item p{white-space:pre-wrap;overflow-wrap:anywhere}.secondary-link{background:none;align-self:flex-start;text-decoration:underline;text-underline-offset:5px;font-size:clamp(16px,1.2vw,23px);padding:8px 2px;color:#346f5d}.preview-notice{position:fixed;top:0;left:50%;transform:translateX(-50%);background:#735127;color:white;border-radius:0 0 10px 10px;padding:5px 16px;font-size:14px;z-index:10}
 @media(max-width:1100px){.market-app{min-height:650px;padding:0 2vw 12px}.masthead{height:19vh;min-height:125px}.buddy-peek{width:40%;max-height:20vh}.home-layout{grid-template-columns:1.65fr 1fr;gap:16px}.welcome h2{font-size:25px;white-space:normal}.wayfinding{padding:20px 15px;gap:12px;border-radius:23px}.wayfinding>.icon{width:46px;height:46px}.action-title{font-size:30px}.shop-feature{border-radius:18px}.feature-copy{padding:20px 12px}.feature-copy h3{font-size:22px;margin-right:0}.feature-copy .icon{display:none}.category-item{padding:12px 10px;font-size:18px;gap:10px}.category-item .icon{width:34px;height:34px}.shop-grid{grid-template-columns:repeat(2,1fr)}.section-heading{flex-wrap:wrap}.search{width:40%}.workbuddy-logo{width:115px}}
-@media(max-aspect-ratio:1/1){.market-app{height:auto;min-height:100dvh}.masthead{height:19vw;min-height:130px}.brand h1{font-size:clamp(44px,8vw,80px)}.brand>span{font-size:12px}.buddy-peek{width:44%;max-height:23vw;right:0}.main-surface{min-height:650px;flex:auto;padding:18px}.home-layout{display:flex;flex-direction:column-reverse;gap:20px}.welcome{padding:15px 0;gap:10px}.welcome h2{font-size:32px}.welcome-actions{flex-direction:row;gap:12px}.wayfinding{min-width:0;flex:1;min-height:110px}.wayfinding .action-sub{font-size:14px}.wayfinding .action-title{font-size:28px}.wayfinding .arrow{display:none}.spotlight-container{height:48vh;min-height:350px}.shop-grid{max-height:65vh}.section-view{min-height:60vh}.category-bar{justify-content:flex-start;min-height:90px}.category-item{flex:0 0 auto}.footer{min-height:50px}.footer-info{flex-direction:column;align-items:flex-start;gap:5px}.detail-content{display:flex;flex-direction:column;max-height:70vh}.detail-photos{height:35vh;flex-shrink:0}.map-layout{display:flex;flex-direction:column}.map-canvas{height:35vh;flex:auto}.map-board{min-width:0}.knowledge-list{grid-template-columns:1fr;max-height:65vh}}
+@media(max-aspect-ratio:1/1){.market-app{height:auto;min-height:100dvh}.masthead{height:19vw;min-height:130px}.brand h1{font-size:clamp(44px,8vw,80px)}.brand>span{font-size:12px}.buddy-peek{width:44%;max-height:23vw;right:0}.main-surface{min-height:650px;flex:auto;padding:18px}.home-layout{display:flex;flex-direction:column;gap:20px}.welcome{padding:15px 0;gap:10px}.welcome h2{font-size:32px}.welcome-actions{flex-direction:row;gap:12px}.wayfinding{min-width:0;flex:1;min-height:110px}.wayfinding .action-sub{font-size:14px}.wayfinding .action-title{font-size:28px}.wayfinding .arrow{display:none}.spotlight-container{height:48vh;min-height:350px}.shop-grid{max-height:65vh}.section-view{min-height:60vh}.category-bar{justify-content:flex-start;min-height:90px}.category-item{flex:0 0 auto}.footer{min-height:50px}.footer-info{flex-direction:column;align-items:flex-start;gap:5px}.detail-content{display:flex;flex-direction:column;max-height:70vh}.detail-photos{height:35vh;flex-shrink:0}.map-layout{display:flex;flex-direction:column}.map-canvas{height:35vh;flex:auto}.map-board{min-width:0}.knowledge-list{grid-template-columns:1fr;max-height:65vh}}
 @media(max-width:600px){.market-app{padding:0 12px 12px}.masthead{min-height:118px}.brand h1{font-size:43px}.brand>span{letter-spacing:.2em;font-size:10px}.buddy-peek{max-height:none;width:47%;bottom:-5px}.main-surface{min-height:640px;padding:13px}.welcome h2{font-size:27px}.welcome .subtitle{font-size:14px}.wayfinding{padding:14px 10px;gap:8px;border-radius:18px}.wayfinding>.icon{width:32px;height:32px}.wayfinding .action-title{font-size:23px}.wayfinding .action-sub{font-size:12px}.spotlight{gap:8px;grid-template-columns:repeat(2,1fr)}.shop-feature:nth-child(3){display:none}.feature-copy h3{font-size:21px}.feature-copy p{font-size:14px}.spotlight-container{height:380px}.shop-grid{grid-template-columns:1fr;gap:12px}.search{width:100%;order:3}.section-heading h2{font-size:27px}.section-heading .quiet-button{font-size:14px;padding:10px}.preview-notice{font-size:10px;width:90%;text-align:center}.detail-photos{height:280px}.footer{font-size:10px}.workbuddy-logo{width:95px}.category-item{font-size:18px}.map-caption{font-size:13px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
 .workbuddy-logo{height:3.7vh;max-height:40px;min-height:22px;object-fit:contain;object-position:right center}.buddy-peek{bottom:-3.4vh}.feature-copy h3{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.category-item .icon{filter:invert(20%) sepia(35%) saturate(1100%) hue-rotate(112deg)}
@@ -238,4 +238,498 @@ button:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:3px so
  .feature-copy h3{font-size:clamp(16px,1.7vw,30px)}
  .feature-copy p{font-size:clamp(11px,1vw,18px)}
  .sample-tag{font-size:clamp(10px,.95vw,15px);padding:.3vh .7vw}
+}
+
+/* ===== Ocean Pulse Reskin · 深海未来风 (2026-10-19) =====
+   位置与布局保持不变，仅替换视觉层：深海蓝底 + 青蓝辉光 + 橙色主行动 + 绿色辅行动 + 银色描边玻璃卡片 */
+:root{
+ --ob-deep:#021024;--ob-navy:#062B52;
+ --ob-panel:rgba(9,37,72,.62);--ob-panel-deep:rgba(5,24,48,.55);
+ --ob-cyan:#3EC6FF;--ob-blue:#1273C4;--ob-orange:#FF8A3D;--ob-green:#2FD3A2;
+ --ob-silver:#C7D8E8;--ob-ink:#EAF6FF;--ob-muted:#8FB3D4;--ob-line:rgba(199,216,232,.24);
+ color:var(--ob-ink);
+}
+body{
+ background:
+  radial-gradient(120% 62% at 50% -12%,rgba(62,198,255,.16),transparent 62%),
+  radial-gradient(80% 42% at 88% 112%,rgba(255,138,61,.10),transparent 60%),
+  radial-gradient(70% 40% at 8% 108%,rgba(47,211,162,.08),transparent 60%),
+  linear-gradient(180deg,#021024 0%,#05315F 52%,#031A36 100%) fixed;
+}
+/* 海面波光：底部双层波浪剪影（纯装饰，不参与布局） */
+body::before{content:'';position:fixed;left:0;right:0;bottom:0;height:32vh;z-index:-1;pointer-events:none;opacity:.55;
+ background:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 220' preserveAspectRatio='none'%3E%3Cpath fill='%233EC6FF' fill-opacity='.07' d='M0,120 C240,180 480,60 720,110 C960,160 1200,70 1440,130 L1440,220 L0,220 Z'/%3E%3C/svg%3E") bottom/100% 100% no-repeat,
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 220' preserveAspectRatio='none'%3E%3Cpath fill='%231273C4' fill-opacity='.10' d='M0,150 C260,90 520,190 760,140 C1000,90 1240,170 1440,110 L1440,220 L0,220 Z'/%3E%3C/svg%3E") bottom/100% 84% no-repeat}
+::selection{background:rgba(62,198,255,.35);color:#fff}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(62,198,255,.30);border-radius:8px;border:2px solid transparent;background-clip:content-box}
+*{scrollbar-color:rgba(62,198,255,.35) transparent;scrollbar-width:thin}
+
+/* —— 头部品牌 —— */
+.brand h1{color:#fff;background:linear-gradient(180deg,#FFFFFF 25%,#9FD8FF 95%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 8px 30px rgba(62,198,255,.35))}
+.brand>span{color:var(--ob-cyan);opacity:.9}
+
+/* —— 主面板：玻璃质感 —— */
+.main-surface{
+ background:linear-gradient(160deg,rgba(13,48,92,.60),rgba(6,26,52,.48));
+ border:1px solid var(--ob-line);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+ box-shadow:0 24px 70px -28px rgba(0,0,0,.65),inset 0 1px 0 rgba(255,255,255,.08),0 0 0 1px rgba(62,198,255,.04)}
+
+/* —— 焦点商户卡 —— */
+.shop-feature,.spotlight .shop-feature:nth-child(2),.spotlight .shop-feature:nth-child(3){border:2px solid rgba(255,255,255,.55);border-radius:1.25rem;box-shadow:0 18px 48px -18px rgba(0,0,0,.6),0 0 34px -10px rgba(62,198,255,.30);transition:transform .3s ease,box-shadow .3s ease}
+.shop-feature:hover:not(:disabled){transform:translateY(-4px);box-shadow:0 26px 60px -18px rgba(0,0,0,.65),0 0 44px -8px rgba(62,198,255,.45)}
+.feature-copy{background:linear-gradient(180deg,rgba(2,16,36,0) 0%,rgba(2,16,36,.55) 32%,rgba(2,16,36,.93) 100%)}
+.feature-copy h3{color:#fff}
+.sample-tag{background:rgba(2,16,36,.72);border:1px solid var(--ob-line);border-radius:999px;color:var(--ob-silver);backdrop-filter:blur(6px)}
+
+/* —— 欢迎区 / 行动入口：橙=主 · 绿=辅 —— */
+.welcome h2{color:#fff}
+.welcome .subtitle{color:var(--ob-muted)}
+.wayfinding{
+ background:linear-gradient(150deg,rgba(16,54,100,.78),rgba(8,32,64,.72));
+ border:1px solid var(--ob-line);color:var(--ob-ink);
+ box-shadow:0 14px 40px -16px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.07);
+ transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
+.wayfinding:hover{transform:translateY(-4px);border-color:rgba(62,198,255,.5);box-shadow:0 22px 54px -16px rgba(0,0,0,.6),0 0 36px -10px rgba(62,198,255,.4)}
+.wayfinding .action-sub{color:var(--ob-muted)}
+.wayfinding.primary{
+ background:linear-gradient(135deg,#FF9A4D 0%,#FF6F1F 100%);
+ border-color:rgba(255,255,255,.35);color:#fff;
+ box-shadow:0 16px 46px -14px rgba(255,122,40,.55),inset 0 1px 0 rgba(255,255,255,.3)}
+.wayfinding.primary:hover{border-color:rgba(255,255,255,.6);box-shadow:0 24px 58px -14px rgba(255,122,40,.65)}
+.wayfinding.primary .action-sub{color:rgba(255,243,228,.88)}
+.wayfinding .icon:not(.art-icon){filter:brightness(0) invert(1);opacity:.88}
+.wayfinding .arrow{filter:brightness(0) invert(1);opacity:.85}
+.secondary-link{color:var(--ob-cyan)}
+
+/* —— 分类栏 —— */
+.category-bar{
+ background:linear-gradient(160deg,rgba(13,48,92,.55),rgba(6,26,52,.45));
+ border:1px solid var(--ob-line);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+ box-shadow:0 18px 50px -24px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.06)}
+.category-item{color:var(--ob-ink);transition:background .25s ease,box-shadow .25s ease,color .25s ease}
+.category-item:hover:not(.selected){background:rgba(62,198,255,.08)}
+.category-item.selected{background:rgba(62,198,255,.14);color:#fff;box-shadow:inset 0 0 0 2px rgba(62,198,255,.45),0 0 26px -6px rgba(62,198,255,.55)}
+.category-item .icon:not(.art-icon){filter:brightness(0) invert(1);opacity:.72}
+.category-item.selected .icon:not(.art-icon){opacity:1;filter:brightness(0) invert(1) drop-shadow(0 0 8px rgba(62,198,255,.9))}
+.category-placeholder{color:var(--ob-muted)}
+
+/* —— 通用按钮 / 返回 / 搜索 —— */
+.back-button,.quiet-button{background:rgba(16,54,100,.55);border:1px solid var(--ob-line);color:var(--ob-ink);box-shadow:inset 0 1px 0 rgba(255,255,255,.06)}
+.quiet-button.active{background:linear-gradient(135deg,#1273C4,#3EC6FF);border-color:transparent;color:#fff;box-shadow:0 10px 30px -10px rgba(62,198,255,.55)}
+.back-button .icon,.quiet-button .icon:not(.art-icon){filter:brightness(0) invert(1);opacity:.85}
+.quiet-button.active .icon{filter:brightness(0) invert(1);opacity:1}
+.search{background:rgba(4,22,44,.6);border:1px solid var(--ob-line)}
+.search .icon{filter:brightness(0) invert(1);opacity:.75}
+.search input{color:#fff}
+.search input::placeholder{color:var(--ob-muted);opacity:.85}
+.search:focus-within{outline:2px solid rgba(62,198,255,.55);outline-offset:2px;box-shadow:0 0 28px -8px rgba(62,198,255,.5)}
+
+/* —— 标题与辅助文字 —— */
+.section-heading h2,.empty-state h2,.empty-state h3{color:#fff}
+.welcome h2,.shop-card h3,.zone-info h3,.knowledge-item h3{color:var(--ob-ink)}
+.en{color:var(--ob-muted)}
+.bi .en{color:inherit;opacity:.75}
+
+/* —— 页脚市场标识：银色主描边 + 橙色点缀 —— */
+.market-mark svg path{stroke:var(--ob-silver)}
+.market-mark svg path[stroke="#C18C5D"]{stroke:var(--ob-orange)}
+.market-mark .mt b{color:#fff}
+.market-mark .mt span{color:var(--ob-cyan)}
+
+/* —— 商户列表卡 —— */
+.shop-card{background:var(--ob-panel);border:1px solid var(--ob-line);box-shadow:0 12px 34px -18px rgba(0,0,0,.55);transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
+.shop-card:hover{transform:translateY(-4px);border-color:rgba(62,198,255,.45);box-shadow:0 22px 50px -18px rgba(0,0,0,.6),0 0 32px -10px rgba(62,198,255,.35)}
+.shop-card p{color:var(--ob-muted)}
+.stall-code{background:rgba(62,198,255,.12);border:1px solid rgba(62,198,255,.32);border-radius:999px;color:var(--ob-cyan)}
+
+/* —— 空状态 / 占位照片 —— */
+.empty-state{background:rgba(9,37,72,.45);border:1px dashed rgba(199,216,232,.30);color:var(--ob-muted)}
+.empty-state .icon:not(.art-icon){filter:brightness(0) invert(.9);opacity:.55}
+.photo-empty{background:rgba(4,22,44,.5);border:1px dashed rgba(199,216,232,.25);color:var(--ob-muted)}
+
+/* —— 详情页 —— */
+.detail-text{background:var(--ob-panel);border:1px solid var(--ob-line);color:var(--ob-ink);box-shadow:0 16px 44px -20px rgba(0,0,0,.55)}
+.detail-block+.detail-block{border-top:1px solid rgba(199,216,232,.16)}
+.detail-block h3{color:var(--ob-cyan)}
+.goods span{background:rgba(62,198,255,.12);border:1px solid rgba(62,198,255,.24);border-radius:999px;color:var(--ob-silver)}
+
+/* —— 市场地图 —— */
+.map-canvas{background:rgba(4,22,44,.5);border:1px solid var(--ob-line)}
+.zone{border:2px solid rgba(234,246,255,.85);box-shadow:0 10px 24px -10px rgba(0,0,0,.5),inset 0 0 0 999px rgba(6,43,82,.20);color:#062B52;font-weight:800;transition:box-shadow .25s ease,transform .25s ease}
+.zone:hover:not(.selected){transform:scale(1.015)}
+.zone.selected{outline:3px solid var(--ob-cyan);outline-offset:-4px;box-shadow:0 14px 30px -10px rgba(0,0,0,.55),0 0 30px -6px rgba(62,198,255,.6),inset 0 0 0 999px rgba(6,43,82,.14)}
+.zone-info{background:var(--ob-panel);border:1px solid var(--ob-line);color:var(--ob-ink);backdrop-filter:blur(8px)}
+.map-caption{color:var(--ob-muted)}
+
+/* —— 食材图鉴 —— */
+.knowledge-item{background:var(--ob-panel);border:1px solid var(--ob-line);box-shadow:0 12px 34px -18px rgba(0,0,0,.5)}
+
+/* —— 页脚 / 提示条 —— */
+.footer{color:var(--ob-muted)}
+.preview-notice{background:linear-gradient(90deg,#FF8A3D,#FFB25E);color:#3A1B02;border-radius:0 0 1rem 1rem;font-weight:700}
+
+/* —— 交互焦点 —— */
+button{transition:transform .2s ease,box-shadow .25s ease,filter .2s ease,background .25s ease,border-color .25s ease}
+button:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:3px solid rgba(62,198,255,.6);outline-offset:3px}
+@media(prefers-contrast:more){
+ :root{--ob-line:rgba(224,238,250,.55);--ob-muted:#AECBE6}
+ .main-surface,.category-bar,.shop-card,.zone-info,.knowledge-item,.detail-text{border-width:2px}
+}
+/* 根节点背景转为透明：让 body 渐变成为画布底色，否则 body::before 的波浪会被根背景盖住 */
+:root{background:none}
+body{background-attachment:fixed}
+/* 统一圆角语言：移除有机风的不对称圆角 */
+.wayfinding,.wayfinding.primary{border-radius:1.5rem}
+.shop-card{border-radius:1.25rem}
+/* WorkBuddy 猫形伙伴已从界面移除：仅保留页脚 workbuddy 标识 */
+.buddy-peek{display:none!important}
+
+/* ===== Glass Coast Reskin v2 · 浅海玻璃未来风 (2026-10-19) =====
+   参考浅色调性：近白浅蓝底 + 白玻璃卡片 + 深蓝文字 + 青蓝辉光；导航栏玻璃态 */
+:root{
+ --ob-cyan:#0E86D8;--ob-blue:#2E7BD8;--ob-orange:#FF7A2E;--ob-green:#12B98A;
+ --ob-silver:#8FA9C6;--ob-ink:#10315F;--ob-muted:#5E7EA8;--ob-line:rgba(16,49,95,.16);
+ --ob-panel:rgba(255,255,255,.58);color:var(--ob-ink);
+}
+body{
+ background:
+  radial-gradient(120% 60% at 50% -12%,rgba(255,255,255,.92),transparent 60%),
+  radial-gradient(70% 40% at 92% -4%,rgba(14,134,216,.14),transparent 60%),
+  radial-gradient(60% 36% at 4% 104%,rgba(18,185,138,.12),transparent 62%),
+  radial-gradient(80% 42% at 88% 112%,rgba(255,122,46,.08),transparent 60%),
+  linear-gradient(180deg,#F4F8FD 0%,#DFECFA 52%,#C9DFF5 100%) fixed;
+}
+body::before{opacity:.6;
+ background:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 220' preserveAspectRatio='none'%3E%3Cpath fill='%237FB6E8' fill-opacity='.22' d='M0,120 C240,180 480,60 720,110 C960,160 1200,70 1440,130 L1440,220 L0,220 Z'/%3E%3C/svg%3E") bottom/100% 100% no-repeat,
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 220' preserveAspectRatio='none'%3E%3Cpath fill='%233E8FD0' fill-opacity='.16' d='M0,150 C260,90 520,190 760,140 C1000,90 1240,170 1440,110 L1440,220 L0,220 Z'/%3E%3C/svg%3E") bottom/100% 84% no-repeat}
+body::after{opacity:.03}
+::selection{background:rgba(46,123,208,.22);color:var(--ob-ink)}
+::-webkit-scrollbar-thumb{background:rgba(46,123,208,.35)}
+
+/* —— 头部：品牌 + 日期天气 —— */
+.brand h1{background:linear-gradient(180deg,#16418C 15%,#2E7BD8 90%);-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 10px 24px rgba(46,123,208,.22))}
+.brand>span{color:#2E7BD8;opacity:.95}
+.head-info{margin-left:auto;display:flex;align-items:baseline;gap:1.6vw;min-width:0;padding-right:1vw;color:#123C7A}
+.head-info time{font-weight:800;font-size:clamp(17px,1.5vw,28px);white-space:nowrap}
+.head-info time .en{color:var(--ob-muted);font-weight:700}
+#weatherText{font-weight:800;font-size:clamp(17px,1.5vw,28px);color:#1D6FC4;white-space:nowrap}
+#weatherText .en{color:var(--ob-muted);font-weight:700}
+#weatherText[data-state="error"]{display:none}
+#weatherText[data-state="loading"]{opacity:.45}
+
+/* —— 主面板 / 玻璃卡 —— */
+.main-surface{
+ background:linear-gradient(165deg,rgba(255,255,255,.74),rgba(255,255,255,.52));
+ border:1px solid rgba(255,255,255,.9);
+ box-shadow:0 24px 60px -28px rgba(31,71,125,.35),inset 0 1px 0 #fff,0 0 0 1px rgba(46,123,208,.05)}
+.shop-feature,.spotlight .shop-feature:nth-child(2),.spotlight .shop-feature:nth-child(3){border:3px solid #fff;box-shadow:0 18px 44px -18px rgba(31,71,125,.35),0 0 30px -8px rgba(14,134,216,.25)}
+.shop-feature:hover:not(:disabled){box-shadow:0 26px 58px -18px rgba(31,71,125,.4),0 0 40px -8px rgba(14,134,216,.4)}
+.feature-copy{background:linear-gradient(180deg,rgba(6,28,64,0) 0%,rgba(6,28,64,.55) 32%,rgba(6,28,64,.92) 100%)}
+.feature-copy h3{color:#fff}
+.sample-tag{background:rgba(255,255,255,.85);border:1px solid rgba(16,49,95,.15);color:#123C7A}
+
+/* —— 行动入口：玻璃态 · 橙=图鉴主行动 · 蓝=地图 —— */
+.welcome h2{color:#123C7A}
+.welcome .subtitle{color:var(--ob-muted)}
+.wayfinding{
+ background:linear-gradient(150deg,rgba(255,255,255,.8),rgba(255,255,255,.55));
+ border:1px solid rgba(255,255,255,.95);color:var(--ob-ink);
+ box-shadow:0 14px 36px -16px rgba(31,71,125,.35),inset 0 1px 0 #fff}
+.wayfinding:hover{border-color:rgba(46,123,208,.45);box-shadow:0 22px 50px -16px rgba(31,71,125,.4),0 0 34px -10px rgba(14,134,216,.4)}
+.wayfinding .action-sub{color:var(--ob-muted)}
+.wayfinding.primary{
+ background:linear-gradient(135deg,#FF9A4D 0%,#FF6F1F 100%);
+ border-color:rgba(255,255,255,.5);color:#fff;
+ box-shadow:0 16px 42px -14px rgba(255,122,46,.5),inset 0 1px 0 rgba(255,255,255,.35)}
+.wayfinding.primary:hover{box-shadow:0 24px 54px -14px rgba(255,122,46,.6)}
+.wayfinding.primary .action-sub{color:rgba(255,244,230,.9)}
+.wayfinding .icon:not(.art-icon){filter:invert(17%) sepia(45%) saturate(1400%) hue-rotate(200deg) brightness(92%);opacity:.9}
+.wayfinding .arrow{filter:invert(17%) sepia(45%) saturate(1400%) hue-rotate(200deg) brightness(92%);opacity:.8}
+.wayfinding.primary .icon:not(.art-icon),.wayfinding.primary .arrow{filter:brightness(0) invert(1);opacity:1}
+.secondary-link{color:#1D6FC4}
+
+/* —— 底部导航栏：玻璃态 —— */
+.category-bar{
+ background:linear-gradient(160deg,rgba(255,255,255,.66),rgba(255,255,255,.44));
+ border:1px solid rgba(255,255,255,.85);
+ backdrop-filter:blur(18px) saturate(160%);-webkit-backdrop-filter:blur(18px) saturate(160%);
+ box-shadow:0 18px 44px -22px rgba(31,71,125,.4),inset 0 1px 0 #fff}
+.category-item{
+ background:rgba(255,255,255,.42);border:1px solid rgba(16,49,95,.10);color:var(--ob-ink)}
+.category-item:hover:not(.selected){background:rgba(255,255,255,.75)}
+.category-item.selected{
+ background:linear-gradient(160deg,rgba(46,123,208,.18),rgba(46,123,208,.07));color:#0F4FA8;border-color:rgba(46,123,208,.45);
+ box-shadow:inset 0 0 0 2px rgba(46,123,208,.4),0 0 24px -6px rgba(14,134,216,.5)}
+.category-item .icon:not(.art-icon){filter:invert(19%) sepia(50%) saturate(1500%) hue-rotate(200deg) brightness(92%);opacity:.8}
+.category-item.selected .icon:not(.art-icon){opacity:1;filter:invert(19%) sepia(50%) saturate(1500%) hue-rotate(200deg) brightness(92%) drop-shadow(0 0 6px rgba(14,134,216,.55))}
+.category-placeholder{color:var(--ob-muted)}
+
+/* —— 按钮 / 搜索 —— */
+.back-button,.quiet-button{background:rgba(255,255,255,.6);border:1px solid rgba(16,49,95,.16);color:var(--ob-ink);box-shadow:inset 0 1px 0 #fff}
+.quiet-button.active{background:linear-gradient(135deg,#2E7BD8,#0E86D8);border-color:transparent;color:#fff;box-shadow:0 10px 26px -10px rgba(46,123,208,.6)}
+.back-button .icon,.quiet-button .icon:not(.art-icon){filter:invert(19%) sepia(50%) saturate(1500%) hue-rotate(200deg) brightness(92%);opacity:.85}
+.quiet-button.active .icon{filter:brightness(0) invert(1);opacity:1}
+.search{background:rgba(255,255,255,.65);border:1px solid rgba(16,49,95,.16)}
+.search .icon{filter:invert(19%) sepia(50%) saturate(1500%) hue-rotate(200deg) brightness(92%);opacity:.7}
+.search input{color:var(--ob-ink)}
+.search input::placeholder{color:var(--ob-muted)}
+.search:focus-within{outline:2px solid rgba(46,123,208,.5);box-shadow:0 0 24px -8px rgba(14,134,216,.45)}
+
+/* —— 标题 —— */
+.section-heading h2,.zone-info h3,.empty-state h2,.empty-state h3,.knowledge-item h3{color:#123C7A}
+.en{color:var(--ob-muted)}
+.bi .en{color:inherit;opacity:.72}
+
+/* —— 页脚市场标识（SK-Market 盾标 + 蓝字） —— */
+.market-mark svg path{stroke:#2B3AA6}
+.market-mark .mt b{color:#1F2F8F}
+.market-mark .mt span{color:#2B3AA6}
+
+/* —— 列表卡 —— */
+.shop-card{background:var(--ob-panel);border:1px solid rgba(255,255,255,.9);box-shadow:0 12px 30px -18px rgba(31,71,125,.35);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.shop-card:hover{border-color:rgba(46,123,208,.4);box-shadow:0 20px 44px -18px rgba(31,71,125,.4),0 0 28px -10px rgba(14,134,216,.35)}
+.shop-card p{color:var(--ob-muted)}
+.stall-code{background:rgba(46,123,208,.10);border:1px solid rgba(46,123,208,.3);color:#1D5FBF}
+
+/* —— 空状态 / 占位 —— */
+.empty-state{background:rgba(255,255,255,.5);border:1px dashed rgba(16,49,95,.22);color:var(--ob-muted)}
+.empty-state .icon:not(.art-icon){filter:invert(19%) sepia(50%) saturate(1500%) hue-rotate(200deg) brightness(92%);opacity:.5}
+.photo-empty{background:rgba(226,239,250,.6);border:1px dashed rgba(16,49,95,.2);color:var(--ob-muted)}
+
+/* —— 详情 —— */
+.detail-text{background:var(--ob-panel);border:1px solid rgba(255,255,255,.9);color:var(--ob-ink);box-shadow:0 16px 40px -20px rgba(31,71,125,.35);backdrop-filter:blur(10px)}
+.detail-block+.detail-block{border-top:1px solid rgba(16,49,95,.12)}
+.detail-block h3{color:#1D6FC4}
+.goods span{background:rgba(46,123,208,.10);border:1px solid rgba(46,123,208,.22);color:#1D5FBF}
+
+/* —— 地图 —— */
+.map-canvas{background:rgba(216,233,248,.55);border:1px solid rgba(16,49,95,.14)}
+.zone{border:2px solid #fff;box-shadow:0 10px 22px -10px rgba(31,71,125,.35),inset 0 0 0 999px rgba(255,255,255,.24);color:#10315F}
+.zone.selected{outline:3px solid #1D6FC4;outline-offset:-4px;box-shadow:0 14px 28px -10px rgba(31,71,125,.4),0 0 26px -6px rgba(14,134,216,.55),inset 0 0 0 999px rgba(255,255,255,.3)}
+.zone-info{background:var(--ob-panel);border:1px solid rgba(255,255,255,.9);color:var(--ob-ink);backdrop-filter:blur(10px)}
+
+/* —— 图鉴 / 页脚 / 提示 —— */
+.knowledge-item{background:var(--ob-panel);border:1px solid rgba(255,255,255,.9);box-shadow:0 12px 30px -18px rgba(31,71,125,.3)}
+.footer{color:var(--ob-muted)}
+.preview-notice{background:linear-gradient(90deg,#FF8A3D,#FFB25E);color:#3A1B02}
+
+/* —— 焦点 —— */
+button:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:3px solid rgba(46,123,208,.6);outline-offset:3px}
+
+/* —— 大屏(1.97m×2m)专属：日期天气放大 —— */
+@media (min-width:601px) and (min-aspect-ratio:17/20) and (max-aspect-ratio:5/4){
+ .head-info{gap:1.4vw;padding-right:2.2vw;align-items:center}
+ .head-info time,#weatherText{font-size:2vw}
+}
+
+/* —— 3D 图标保真：旧的品类绿色滤镜不得作用于 PNG 图标 —— */
+.icon.art-icon{filter:none!important;object-fit:contain;opacity:1}
+
+/* ===== Layout v3 · 依据手绘示意稿重排版 (2026-10-19) =====
+   头部=盾标+名称/右侧日期天气；子页面底部=返回上一级+主页；子页面隐藏品类栏 */
+.brand{display:flex;align-items:center;gap:1.2vw;text-align:left}
+.brand-mark{width:clamp(46px,4.8vw,92px);height:auto;flex-shrink:0}
+.brand-text{display:flex;flex-direction:column;align-items:flex-start;min-width:0}
+.brand-text h1{font-size:clamp(26px,2.7vw,54px);line-height:1.15;margin:0;white-space:nowrap}
+.brand-text>span{font-size:clamp(10px,1.05vw,19px);letter-spacing:.2em;color:#2B3AA6;font-family:var(--en-font)}
+.head-info{flex-direction:column;align-items:flex-end;gap:.3vh;padding-right:.6vw}
+.market-app:not([data-view="home"]) .category-bar{display:none}
+.page-actions{order:99;display:flex;justify-content:space-between;align-items:center;gap:1.5vw;flex-shrink:0;margin-top:1.2vh}
+.nav-button{
+ display:inline-flex;align-items:center;justify-content:center;gap:.6vw;
+ min-height:52px;padding:10px 26px;border-radius:999px;
+ font-size:clamp(16px,1.5vw,28px);font-weight:800;
+ background:rgba(255,255,255,.62);border:1px solid rgba(16,49,95,.16);color:var(--ob-ink);
+ box-shadow:0 10px 26px -14px rgba(31,71,125,.4),inset 0 1px 0 #fff}
+.nav-button:hover:not(:disabled){border-color:rgba(46,123,208,.45)}
+.nav-button .icon{filter:invert(19%) sepia(50%) saturate(1500%) hue-rotate(200deg) brightness(92%);opacity:.85}
+
+/* —— 大屏(1.97m×2m)排版 —— */
+@media (min-width:601px) and (min-aspect-ratio:17/20) and (max-aspect-ratio:5/4){
+ /* 头部 */
+ .brand{gap:1.4vw}
+ .brand-mark{width:5vw}
+ .brand-text h1{font-size:3.1vw}
+ .brand-text>span{font-size:1.25vw}
+ .head-info time,#weatherText{font-size:1.8vw}
+ /* 首页底部品类：圆形图标键 */
+ .category-item{
+  flex-direction:column;gap:.4vh;aspect-ratio:1/1;max-height:100%;
+  justify-content:center;border-radius:50%;padding:.6vh .4vw;font-size:1.1vw}
+ .category-item .icon,.category-item .art-icon{width:3.8vw;height:3.8vw;margin:0}
+ /* 商户列表：单列宽行、可滚动 */
+ .shop-grid{grid-template-columns:minmax(0,1fr)}
+ .shop-card{min-height:13vh}
+ /* 详情：照片左 · 今日售卖右 · 摊位介绍横贯下方 */
+ .detail-content{
+  display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  grid-template-rows:minmax(0,1fr) auto;gap:1.4vw;max-height:none;overflow:visible}
+ .detail-photos{grid-row:1;grid-column:1;flex:none;height:100%;min-height:0}
+ .detail-side{
+  grid-row:1;grid-column:2;display:flex;flex-direction:column;gap:1.4vh;min-height:0;overflow:auto;
+  background:var(--ob-panel);border:1px solid rgba(255,255,255,.9);border-radius:1.5vw;padding:1.4vw;
+  box-shadow:0 16px 40px -20px rgba(31,71,125,.35)}
+ .detail-side h3{font-size:2.2vw;margin:0 0 .8vh}
+ .detail-side p{font-size:1.6vw;margin:0 0 .8vh;line-height:1.6}
+ .detail-side .goods{margin-bottom:0}
+ .detail-intro{
+  grid-row:2;grid-column:1/-1;min-width:0;
+  background:var(--ob-panel);border:1px solid rgba(255,255,255,.9);border-radius:1.5vw;padding:1.4vw;
+  box-shadow:0 16px 40px -20px rgba(31,71,125,.35)}
+ .detail-intro h3{margin:0 0 .8vh;font-size:2.2vw;color:#1D6FC4}
+ .detail-intro p{font-size:1.7vw;margin:0 0 .8vh}
+ /* 地图：图例在顶 · 平面图为主 · 区域说明底部条 */
+ .map-layout{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr) auto auto;gap:1vh}
+ .map-area{display:contents}
+ .floor-tabs{flex-wrap:nowrap;overflow-x:auto}
+ .zone-info{max-height:14vh;overflow:auto;border-radius:1.5vw}
+ /* 底部返回/主页 */
+ .page-actions{margin-top:0}
+ .nav-button{min-height:8.5vh;font-size:1.9vw;padding:.8vh 2.6vw}
+ .nav-button .icon{width:2.1vw;height:2.1vw}
+}
+
+/* ===== v4 · 双语可读性 + 布局细节 (2026-10-19) ===== */
+/* 英文字号提升：所有双语组合中的英文清晰可读 */
+.bi{display:inline-flex;align-items:baseline;gap:.45em;flex-wrap:wrap}
+.bi .en{font-size:.72em;opacity:.85}
+/* 搜索栏嵌入底部导航行（返回 · 搜索 · 主页） */
+.page-actions .search{flex:1;min-width:0;margin:0 2vw;width:auto;order:0}
+/* 详情页编号靠右（与名称同行两端） */
+.section-heading .stall-code{margin-left:auto;flex-shrink:0}
+/* lucide 线性图标保真 */
+.icon{stroke-width:2}
+
+@media (min-width:601px) and (min-aspect-ratio:17/20) and (max-aspect-ratio:5/4){
+ /* 首页日期 / 天气放大 */
+ .head-info time,#weatherText{font-size:2.3vw}
+ .head-info time .en,#weatherText .en{font-size:1.55vw}
+ /* 英文整体可读下限 */
+ .bi .en{font-size:1.15vw;opacity:.85}
+ .brand-text>span{font-size:1.35vw}
+ /* 今日售卖：竖排行列（贴合手绘稿） */
+ .detail-side .goods{display:flex;flex-direction:column;gap:0;margin:0}
+ .detail-side .goods span{
+  background:none;border:0;border-bottom:1px solid rgba(16,49,95,.12);
+  border-radius:0;padding:1.1vh .2vw;color:var(--ob-ink);font-size:1.8vw;font-weight:700}
+ .detail-side .goods span:last-child{border-bottom:0}
+ /* 搜索栏（底部行中间） */
+ .page-actions .search{height:auto;padding:1.1vh 1.4vw;font-size:1.8vw;border-radius:999px}
+ .nav-button{gap:.8vw}
+}
+
+/* ===== v5 · 导航键改回圆角长方形 + 字号防溢出 (2026-10-19) ===== */
+/* 按键内容一律不允许溢出边框 */
+.category-item,.nav-button,.quiet-button,.back-button{overflow:hidden}
+.nav-button .bi,.quiet-button .bi,.back-button .bi{flex-wrap:nowrap;white-space:nowrap}
+.nav-button .bi .en{font-size:.62em}
+.quiet-button .bi .en,.back-button .bi .en{font-size:.68em}
+
+@media (min-width:601px) and (min-aspect-ratio:17/20) and (max-aspect-ratio:5/4){
+ /* 底部导航键：圆角长方形（撤回圆形），双语上下堆叠、字号收口 */
+ .category-item{
+  aspect-ratio:auto;max-height:100%;
+  border-radius:1.2vw;padding:.7vh .8vw;
+  font-size:1.05vw;line-height:1.22}
+ .category-item .bi{flex-direction:column;align-items:center;gap:.15vh;white-space:nowrap}
+ .category-item .bi .en{font-size:.58em;opacity:.8}
+ .category-item .icon,.category-item .art-icon{width:3vw;height:3vw;margin:0}
+ /* 底部行按键：文字不换行不溢出 */
+ .nav-button{font-size:1.75vw;padding:.8vh 2.2vw}
+ .nav-button .bi .en{font-size:1vw}
+ .page-actions .search input{font-size:1.6vw}
+}
+
+/* ===== v6 · 行动键文字防溢出 + 导航键字号与间距 (2026-10-19) ===== */
+@media (min-width:601px) and (min-aspect-ratio:17/20) and (max-aspect-ratio:5/4){
+ /* 海鲜图鉴/看地图大按钮：中英同行，两行收纳，绝不裁切 */
+ .wayfinding{overflow:hidden}
+ .wayfinding .bi{flex-wrap:nowrap;white-space:nowrap}
+ .wayfinding .action-title .bi{display:flex;align-items:baseline;gap:.45em}
+ .wayfinding .action-title .bi .en{font-size:.52em;flex:none}
+ .wayfinding .action-sub .bi{display:flex;align-items:baseline;gap:.45em}
+ .wayfinding .action-sub .bi .en{font-size:.62em;flex:none}
+ .wayfinding .action-sub{margin-top:.5vh}
+ /* 底部导航栏：字号放大 + 按键之间及与边框留距 */
+ .category-bar{padding:1vh 1.2vw;gap:.9vw}
+ .category-item{
+  font-size:1.3vw;padding:1vh .5vw;border-radius:1.1vw;
+  min-width:0;overflow:hidden}
+ .category-item .bi{gap:.3vh}
+ .category-item .bi .en{font-size:.6em}
+ .category-item .icon,.category-item .art-icon{width:3.4vw;height:3.4vw;margin:0}
+}
+
+/* ===== v7 · 双图标品类键 (2026-10-19) ===== */
+.category-icons{display:inline-flex;align-items:center;justify-content:center;gap:.3em}
+@media (min-width:601px) and (min-aspect-ratio:17/20) and (max-aspect-ratio:5/4){
+ .category-icons{gap:.5vw}
+ .category-icons .icon{width:2.9vw;height:2.9vw;margin:0}
+}
+
+/* ===== v8 · 双图标贴近并轻微遮挡 (2026-10-19) ===== */
+.category-icons{gap:0}
+.category-icons .icon+.icon{margin-left:-.45em;position:relative}
+.category-icons .icon:first-child{position:relative;z-index:0}
+.category-icons .icon+.icon{z-index:1}
+@media (min-width:601px) and (min-aspect-ratio:17/20) and (max-aspect-ratio:5/4){
+ .category-icons .icon+.icon{margin-left:-1vw}
+}
+
+/* ===== v9 · 3D 组合图标（实体遮挡，无叠线） (2026-10-19) ===== */
+.category-item .icon.art-icon{width:4.6vw;height:4.6vw;margin:-.9vw 0 -.6vw;object-fit:contain}
+@media (min-width:601px) and (min-aspect-ratio:17/20) and (max-aspect-ratio:5/4){
+ .category-item .icon.art-icon{width:5vw;height:5vw;margin:-1vw 0 -.7vw}
+}
+
+/* ===== v10 · 组合图标尺寸（40:24 视图框） (2026-10-19) ===== */
+.category-icons .icon{width:5.3vw;height:3.2vw;object-fit:contain}
+@media (min-width:601px) and (min-aspect-ratio:17/20) and (max-aspect-ratio:5/4){
+ .category-icons .icon{width:5.3vw;height:3.2vw;margin:0}
+}
+
+/* ===== v11 · 单图标 + 英文字号再放大 (2026-10-19) ===== */
+.bi .en{font-size:.8em}
+@media (min-width:601px) and (min-aspect-ratio:17/20) and (max-aspect-ratio:5/4){
+ .bi .en{font-size:1.5vw}
+ .wayfinding .action-title .bi .en{font-size:.65em}
+ .wayfinding .action-sub .bi .en{font-size:.75em}
+ .nav-button .bi .en,.quiet-button .bi .en,.back-button .bi .en{font-size:.72em}
+ .category-item .bi .en{font-size:.68em}
+ .head-info time .en,#weatherText .en{font-size:1.7vw}
+}
+
+/* ===== v12 · 行动键文字垂直居中防裁切 (2026-10-19) ===== */
+@media (min-width:601px) and (min-aspect-ratio:17/20) and (max-aspect-ratio:5/4){
+ .wayfinding{height:auto;min-height:10.5vh;align-items:center;padding:1.4vh 1.4vw}
+ .wayfinding .action-copy{display:flex;flex-direction:column;justify-content:center;gap:.4vh;min-width:0;flex:1}
+ .wayfinding .action-title,.wayfinding .action-sub{line-height:1.25;max-width:100%;overflow:hidden}
+ .wayfinding .action-title{font-size:2.6vw}
+ .wayfinding .action-sub{font-size:1.4vw;margin-top:0}
+ .wayfinding .action-sub .bi .en{font-size:.8em}
+ .wayfinding .arrow{flex-shrink:0}
+}
+
+/* ===== v13 · 字号整体再放大 (2026-10-19) ===== */
+@media (min-width:601px) and (min-aspect-ratio:17/20) and (max-aspect-ratio:5/4){
+ .wayfinding .action-title{font-size:3.1vw}
+ .wayfinding .action-sub{font-size:1.7vw}
+ .category-item{font-size:1.5vw}
+ .category-item .bi .en{font-size:.68em}
+ .nav-button{font-size:2.1vw}
+ .nav-button .bi .en{font-size:.7em}
+}
+
+/* ===== v14 · 行动键四行排版：中英成对贴近 + 后三行放大 (2026-10-19) ===== */
+@media (min-width:601px) and (min-aspect-ratio:17/20) and (max-aspect-ratio:5/4){
+ .wayfinding .action-title .bi{flex-direction:column;align-items:flex-start;gap:.1vh}
+ .wayfinding .action-sub .bi{flex-direction:column;align-items:flex-start;gap:.1vh}
+ .wayfinding .action-title,.wayfinding .action-sub{line-height:1.15}
+ .wayfinding .action-title .bi .en{font-size:.8em}
+ .wayfinding .action-sub{font-size:2vw}
+ .wayfinding .action-sub .bi .en{font-size:.85em}
 }
