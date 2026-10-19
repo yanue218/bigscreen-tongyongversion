@@ -206,5 +206,36 @@ button:active:not(:disabled){transform:scale(.97)}
 button:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:3px solid rgba(93,112,82,.4);outline-offset:3px}
 .footer{color:var(--muted)}
 .preview-notice{background:#5D7052;border-radius:0 0 1rem 1rem}
-/* 16:9 及更宽的桌面视口：约束焦点图行高，避免照片自然高度溢出遮挡分类栏 */
-@media (min-aspect-ratio:5/4){.home-layout{grid-template-rows:minmax(0,1fr)}.spotlight,.shop-feature{min-height:0}.welcome{padding-top:4vh}.buddy-peek{width:21%;max-height:19vh;bottom:-1.6vh}}
+/* 16:9 及更宽的桌面视口：压缩头部与底部占比，保证首页全部内容一屏显示不裁切 */
+@media (min-aspect-ratio:5/4){
+ .market-app{min-height:0;padding-bottom:.8vh}
+ .masthead{height:14vh;min-height:92px}
+ .brand h1{font-size:clamp(38px,5vw,80px)}
+ .brand>span{font-size:clamp(10px,.95vw,17px);letter-spacing:.3em}
+ .buddy-peek{width:18%;max-height:14vh;bottom:-1.2vh}
+ .main-surface{padding:1.6vh 1.4vw}
+ .home-layout{grid-template-rows:minmax(0,1fr);gap:1.5vw}
+ .spotlight,.shop-feature{min-height:0}
+ .welcome{padding-top:.6vh;gap:1.1vh;min-height:0}
+ .welcome h2{font-size:clamp(19px,2vw,34px)}
+ .welcome .subtitle{font-size:clamp(11px,.95vw,17px);margin:.3vh 0 .6vh}
+ .welcome-actions{gap:1vh}
+ .wayfinding{min-height:0;padding:1.3vh 1.1vw;gap:.9vw;border-radius:20px}
+ .wayfinding>.art-icon{width:clamp(42px,4.2vw,80px);height:clamp(42px,4.2vw,80px);margin:-6px -4px}
+ .wayfinding .action-title{font-size:clamp(17px,1.7vw,29px)}
+ .wayfinding .action-sub{font-size:clamp(10px,.9vw,16px);margin-top:.2vh}
+ .wayfinding .arrow{width:clamp(16px,1.6vw,28px);height:clamp(16px,1.6vw,28px)}
+ .secondary-link{font-size:clamp(11px,1vw,17px);padding:.3vh .4vw}
+ .category-bar{min-height:7.5vh;margin-top:1vh;margin-bottom:1vh;padding:.6vh .7vw}
+ .category-item{min-width:0;flex:1 1 0;font-size:clamp(12px,1.2vw,21px);padding:.6vh .6vw;gap:.4vw}
+ .category-item .icon,.category-item .art-icon{width:clamp(22px,2.5vw,46px);height:clamp(22px,2.5vw,46px);margin:0}
+ .footer{min-height:30px;height:4vh;padding-top:.4vh}
+ .workbuddy-logo{width:clamp(80px,7.5vw,140px)}
+ .market-mark svg{width:clamp(22px,2.4vw,44px)}
+ .market-mark .mt b{font-size:clamp(11px,1.1vw,20px)}
+ .market-mark .mt span{font-size:clamp(6px,.55vw,10px)}
+ .feature-copy{padding:1.4vh 1vw}
+ .feature-copy h3{font-size:clamp(16px,1.7vw,30px)}
+ .feature-copy p{font-size:clamp(11px,1vw,18px)}
+ .sample-tag{font-size:clamp(10px,.95vw,15px);padding:.3vh .7vw}
+}
