@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2 × 1.97 米市场大屏 · 比例预览</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;background:#dce9e3;color:#164e40;font-family:'Microsoft YaHei',sans-serif;height:100dvh;display:flex;flex-direction:column}
+    header{padding:10px 16px;text-align:center;font-size:14px;flex:none}
+    main{flex:1;min-height:0;display:grid;place-items:center;padding:8px 16px 16px}
+    .screen{position:relative;overflow:hidden;box-shadow:0 8px 36px #174e4026}
+    iframe{position:absolute;top:0;left:0;width:1000px;height:985px;border:0;transform-origin:top left}
+  </style>
+</head>
+<body>
+  <header>宽 2 米 × 高 1.97 米 · 等比例预览 · 商户资料为设计示意</header>
+  <main><div class="screen"><iframe src="./?preview=design" title="市场大屏等比例交互预览"></iframe></div></main>
+  <script type="module">
+    // Development preview only. 1000 × 985 simulates the ratio, not the panel's physical resolution.
+    const area=document.querySelector('main'),screen=document.querySelector('.screen'),frame=document.querySelector('iframe');
+    function fit(){
+      const scale=Math.min((area.clientWidth-32)/1000,(area.clientHeight-24)/985);
+      screen.style.width=`${1000*scale}px`;
+      screen.style.height=`${985*scale}px`;
+      frame.style.transform=`scale(${scale})`;
+    }
+    new ResizeObserver(fit).observe(area);fit();
+  </script>
+</body>
+</html>
