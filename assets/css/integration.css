@@ -1,0 +1,29 @@
+/* Preserve the colleague's visual system; adapt public data, real images and portrait scrolling. */
+.feed-viewport,.shop-scroll{overflow:auto!important;touch-action:pan-y}
+#feedTrack,#tickerTrack{transform:none!important}
+#ticker{overflow:auto!important;touch-action:pan-x}
+.shop-row{text-align:left;width:100%;font:inherit}
+.shop-row .thumb{font-size:16px;overflow:hidden}
+.entrance-empty{padding:24px;line-height:1.6}
+.photo{font-size:22px;text-align:center}
+.photo>span{padding:20px}
+#syncStatus{font-size:14px;max-width:380px;line-height:1.6}
+.cat-card{font:inherit;cursor:pointer}
+.detail-wrap{overflow:auto}
+.detail-left,.detail-right{flex-shrink:0}
+.panel,.intro-quote{overflow-wrap:anywhere}
+@media (orientation:portrait){
+  .detail-wrap{display:block}
+  .photo-strip{flex:none;height:360px;margin-bottom:28px}
+  .detail-right{display:block}
+  .detail-right .panel{margin-bottom:20px}
+  #homeMain{flex-direction:column}
+  .home-side{flex-direction:row;flex:0 0 240px}
+  .guide-label{display:none}
+  .nav-card{flex:1}
+  .feed-panel{flex:1;min-height:0}
+  .shop-row{gap:14px;padding:18px}
+  .shop-row .nm{font-size:25px}
+  .shop-row .loc{font-size:22px;padding:8px}
+}
+@media (prefers-reduced-motion:reduce){.screen{animation:none}.shop-row:hover,.cat-card:hover{transform:none}}
